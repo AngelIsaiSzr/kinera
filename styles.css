@@ -535,6 +535,10 @@ body {
     color: hsla(0, 0%, 98%, 0.6);
     cursor: pointer;
     transition: var(--transition-elegant);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .scroll-btn:hover {
