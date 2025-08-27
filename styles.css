@@ -468,6 +468,7 @@ body {
 .hero-decoration-3 {
     top: 25%;
     right: 3rem;
+    opacity: 1;
 }
 
 .hero-container {
@@ -1498,7 +1499,7 @@ body {
 .contact-decoration-2 svg {
     width: 2.5rem;
     height: 2.5rem;
-    opacity: 0.2;
+    opacity: 1;
 }
 
 .contact-decoration-3 {
