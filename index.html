@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kínera - El arte que nos conecta</title>
+    <meta name="description"
+        content="Academia creativa y comunidad artística. Talleres gratuitos de escultura, bordado, manualidades y más. El arte como derecho emocional y expresivo para todos.">
+    <meta name="author" content="Kínera">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Kínera - El arte que nos conecta">
+    <meta property="og:description"
+        content="Academia creativa y comunidad artística. Talleres gratuitos de escultura, bordado, manualidades y más. El arte como derecho emocional y expresivo para todos.">
+    <meta property="og:image" content="assets/logo-kinera.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Kínera - El arte que nos conecta">
+    <meta property="twitter:description"
+        content="Academia creativa y comunidad artística. Talleres gratuitos de arte para todos.">
+    <meta property="twitter:image" content="assets/logo-kinera.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo-kinera.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo" onclick="scrollToSection('hero')">
+                    <img src="assets/banner-kinera-main.png" alt="Kínera Logo"
+                        class="logo-img">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <button onclick="scrollToSection('hero')" class="nav-link">Inicio</button>
+                    <button onclick="scrollToSection('about')" class="nav-link">¿Qué es Kínera?</button>
+                    <button onclick="scrollToSection('values')" class="nav-link">Valores</button>
+                    <button onclick="scrollToSection('workshops')" class="nav-link">Talleres</button>
+                    <button onclick="scrollToSection('impact')" class="nav-link">Impacto</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">Contacto</button>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile hidden">
+                <div class="nav-mobile-content">
+                    <button onclick="scrollToSection('hero')" class="nav-mobile-link">Inicio</button>
+                    <button onclick="scrollToSection('about')" class="nav-mobile-link">¿Qué es Kínera?</button>
+                    <button onclick="scrollToSection('values')" class="nav-mobile-link">Valores</button>
+                    <button onclick="scrollToSection('workshops')" class="nav-mobile-link">Talleres</button>
+                    <button onclick="scrollToSection('impact')" class="nav-mobile-link">Impacto</button>
+                    <button onclick="scrollToSection('contact')" class="nav-mobile-link">Contacto</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- Decorative elements -->
+        <div class="hero-decoration hero-decoration-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z">
+                </path>
+                <path d="M5 3v4"></path>
+                <path d="M19 17v4"></path>
+                <path d="M3 5h4"></path>
+                <path d="M17 19h4"></path>
+            </svg>
+        </div>
+        <div class="hero-decoration hero-decoration-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+            </svg>
+        </div>
+        <div class="hero-decoration hero-decoration-3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z">
+                </path>
+                <path d="M5 3v4"></path>
+                <path d="M19 17v4"></path>
+                <path d="M3 5h4"></path>
+                <path d="M17 19h4"></path>
+            </svg>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Logo -->
+                <div class="hero-logo animate-fade-in">
+                    <img src="assets/banner-kinera.png"
+                        alt="Kínera - El arte que nos conecta" class="hero-logo-img">
+                </div>
+
+                <!-- Main message -->
+                <div class="hero-text animate-fade-in-up delay-500">
+                    <p class="hero-subtitle">"¡Todos deberíamos tener la oportunidad de crear arte!"</p>
+                    <p class="hero-description">
+                        Una comunidad creativa donde el arte no es un privilegio, sino un derecho emocional y expresivo.
+                        Talleres gratuitos de escultura, bordado, manualidades y más.
+                    </p>
+                </div>
+
+                <!-- Call to action buttons -->
+                <div class="hero-buttons animate-fade-in-up delay-1000">
+                    <button class="btn btn-secondary btn-lg" onclick="scrollToSection('workshops')">Ver
+                        Talleres</button>
+                    <button class="btn btn-outline btn-lg" onclick="scrollToSection('about')">Conoce más</button>
+                </div>
+
+                <!-- Scroll indicator -->
+                <div class="hero-scroll animate-bounce">
+                    <button onclick="scrollToSection('about')" class="scroll-btn" aria-label="Scroll down">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <h2 class="section-title">¿Qué es Kínera?</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Kínera es una academia creativa, una comunidad viva, y un espacio de transformación
+                    artística y cultural que nace con la firme creencia de que <strong>el arte no es un privilegio,
+                        sino un derecho emocional y expresivo</strong> que todos deberíamos vivir.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="feature-title">Academia Creativa</h3>
+                    <p class="feature-description">Espacio donde florece la creatividad y se cultiva el arte en todas
+                        sus formas</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Comunidad Viva</h3>
+                    <p class="feature-description">Una red de apoyo donde cada persona encuentra su lugar y voz única
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="feature-title">Transformación Personal</h3>
+                    <p class="feature-description">El arte como herramienta de sanación, expresión y crecimiento
+                        interior</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="feature-title">Impacto Cultural</h3>
+                    <p class="feature-description">Conectando historias, emociones y tradiciones a través de la creación
+                        artística</p>
+                </div>
+            </div>
+
+            <!-- Main Description -->
+            <div class="about-main">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 class="about-subtitle">Arte sin barreras</h3>
+                        <p class="about-paragraph">
+                            A través de talleres gratuitos de <strong>escultura, bordado, manualidades, técnicas mixtas
+                                y arte cultural</strong>, Kínera busca sembrar sensibilidad, creatividad y sentido de
+                            pertenencia
+                            en cada persona que participa.
+                        </p>
+                        <p class="about-paragraph">
+                            Ofrecemos clases tanto <strong>presenciales</strong> como
+                            <strong>virtuales</strong> para ampliar el acceso a más corazones
+                            y manos que quieren crear.
+                        </p>
+                    </div>
+                    <div class="about-quote">
+                        <blockquote class="quote-text">
+                            "Kínera no solo enseña técnicas: reconecta a las personas con su historia,
+                            su cuerpo, su comunidad y su identidad a través del arte."
+                        </blockquote>
+                        <div class="quote-decoration quote-decoration-1"></div>
+                        <div class="quote-decoration quote-decoration-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="values">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Valores</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Los principios que guían cada taller, cada encuentro y cada momento creativo en Kínera
+                </p>
+            </div>
+
+            <!-- Values Grid -->
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-decoration"></div>
+                    <div class="value-content">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="value-title">Inclusión</h3>
+                        <p class="value-description">El arte es para todas y todos</p>
+                    </div>
+                    <div class="value-hover-line"></div>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-decoration"></div>
+                    <div class="value-content">
+                        <div class="value-icon value-icon-accent">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="value-title">Empatía</h3>
+                        <p class="value-description">Cada trazo tiene una historia, y cada historia merece ser escuchada
+                        </p>
+                    </div>
+                    <div class="value-hover-line"></div>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-decoration"></div>
+                    <div class="value-content">
+                        <div class="value-icon value-icon-coral">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3 class="value-title">Identidad</h3>
+                        <p class="value-description">Valoramos nuestras raíces, expresiones culturales y emociones</p>
+                    </div>
+                    <div class="value-hover-line"></div>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-decoration"></div>
+                    <div class="value-content">
+                        <div class="value-icon value-icon-accent">
+                            <i class="fas fa-universal-access"></i>
+                        </div>
+                        <h3 class="value-title">Accesibilidad</h3>
+                        <p class="value-description">Todos los talleres son gratuitos y diseñados con sensibilidad
+                            humana</p>
+                    </div>
+                    <div class="value-hover-line"></div>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-decoration"></div>
+                    <div class="value-content">
+                        <div class="value-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3 class="value-title">Pasión</h3>
+                        <p class="value-description">Enseñamos con amor por el arte y por las personas</p>
+                    </div>
+                    <div class="value-hover-line"></div>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-decoration"></div>
+                    <div class="value-content">
+                        <div class="value-icon value-icon-accent">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="value-title">Cuidado comunitario</h3>
+                        <p class="value-description">Somos red, abrigo y encuentro</p>
+                    </div>
+                    <div class="value-hover-line"></div>
+                </div>
+            </div>
+
+            <!-- Quote Section -->
+            <div class="values-quote">
+                <blockquote class="values-quote-text">
+                    "El arte que nos conecta… porque crear también es sanar, resistir y vivir."
+                </blockquote>
+                <div class="values-quote-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops" class="workshops">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <h2 class="section-title">¿Qué ofrece Kínera?</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Talleres gratuitos diseñados para ser comprensibles, vivenciales y amorosos,
+                    pensados para personas con o sin experiencia, en un ambiente de respeto y comunidad.
+                </p>
+
+                <!-- Mode badges -->
+                <div class="workshop-modes">
+                    <div class="workshop-mode">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Presenciales</span>
+                    </div>
+                    <div class="workshop-mode">
+                        <i class="fas fa-laptop"></i>
+                        <span>Virtuales</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workshops Grid -->
+            <div class="workshops-grid">
+                <div class="workshop-card">
+                    <div class="workshop-decoration"></div>
+                    <div class="workshop-content">
+                        <div class="workshop-icon">
+                            <i class="fas fa-hands-holding"></i>
+                        </div>
+                        <h3 class="workshop-title">Escultura básica y creativa</h3>
+                        <p class="workshop-description">Explora el mundo tridimensional dando forma a tus ideas con
+                            diferentes materiales</p>
+                        <div class="workshop-tags">
+                            <span class="workshop-tag">Presencial</span>
+                            <span class="workshop-tag">Virtual</span>
+                        </div>
+                        <div class="workshop-level">Nivel: Principiante</div>
+                    </div>
+                    <div class="workshop-hover-line"></div>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-decoration"></div>
+                    <div class="workshop-content">
+                        <div class="workshop-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="workshop-title">Bordado tradicional</h3>
+                        <p class="workshop-description">Conecta con tradiciones ancestrales mientras creates arte textil
+                            moderno</p>
+                        <div class="workshop-tags">
+                            <span class="workshop-tag">Presencial</span>
+                            <span class="workshop-tag">Virtual</span>
+                        </div>
+                        <div class="workshop-level">Nivel: Todos los niveles</div>
+                    </div>
+                    <div class="workshop-hover-line"></div>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-decoration"></div>
+                    <div class="workshop-content">
+                        <div class="workshop-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="workshop-title">Manualidades artísticas</h3>
+                        <p class="workshop-description">Desarrolla tu creatividad con técnicas versátiles y materiales
+                            diversos</p>
+                        <div class="workshop-tags">
+                            <span class="workshop-tag">Presencial</span>
+                            <span class="workshop-tag">Virtual</span>
+                        </div>
+                        <div class="workshop-level">Nivel: Principiante</div>
+                    </div>
+                    <div class="workshop-hover-line"></div>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-decoration"></div>
+                    <div class="workshop-content">
+                        <div class="workshop-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3 class="workshop-title">Arte con materiales reciclables</h3>
+                        <p class="workshop-description">Transforma desechos en obras de arte mientras cuidas el planeta
+                        </p>
+                        <div class="workshop-tags">
+                            <span class="workshop-tag">Presencial</span>
+                        </div>
+                        <div class="workshop-level">Nivel: Todos los niveles</div>
+                    </div>
+                    <div class="workshop-hover-line"></div>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-decoration"></div>
+                    <div class="workshop-content">
+                        <div class="workshop-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="workshop-title">Técnicas mixtas</h3>
+                        <p class="workshop-description">Combina textil, barro, pintura y más en creaciones únicas</p>
+                        <div class="workshop-tags">
+                            <span class="workshop-tag">Presencial</span>
+                            <span class="workshop-tag">Virtual</span>
+                        </div>
+                        <div class="workshop-level">Nivel: Intermedio</div>
+                    </div>
+                    <div class="workshop-hover-line"></div>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-decoration"></div>
+                    <div class="workshop-content">
+                        <div class="workshop-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="workshop-title">Charlas culturales y conversatorios</h3>
+                        <p class="workshop-description">Espacios de reflexión sobre identidad, cultura y expresión
+                            artística</p>
+                        <div class="workshop-tags">
+                            <span class="workshop-tag">Virtual</span>
+                        </div>
+                        <div class="workshop-level">Nivel: Todos</div>
+                    </div>
+                    <div class="workshop-hover-line"></div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="workshops-cta">
+                <div class="workshops-cta-content">
+                    <h3 class="workshops-cta-title">¿Listo para crear?</h3>
+                    <p class="workshops-cta-description">
+                        Todos los talleres son completamente gratuitos y están diseñados con sensibilidad humana.
+                        Sin importar tu experiencia, aquí encontrarás tu lugar para crear y conectar.
+                    </p>
+                    <button class="btn btn-primary btn-lg"
+                        onclick="window.open('https://instagram.com/kinera_academy', '_blank')">
+                        Contáctanos por Instagram
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <h2 class="section-title">Impacto Social</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Kínera se alinea con los Objetivos de Desarrollo Sostenible (ODS) de la ONU,
+                    creando impacto real en nuestras comunidades a través del arte
+                </p>
+            </div>
+
+            <!-- Why Kínera is Important -->
+            <div class="impact-hero">
+                <div class="impact-hero-content">
+                    <div class="impact-hero-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="impact-hero-title">¿Por qué Kínera es importante?</h3>
+                    <blockquote class="impact-hero-quote">
+                        "Porque muchas veces, las personas no necesitan teorías para sanar, expresarse o encontrar su
+                        valor:
+                        necesitan <strong>un pincel, un hilo, un pedazo de barro, y alguien que les diga 'lo que haces
+                            importa'</strong>."
+                    </blockquote>
+                    <p class="impact-hero-subtitle">
+                        Kínera transforma vidas a través de la creación artística, conectando historias, emociones y
+                        culturas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- SDG Goals Grid -->
+            <div class="sdg-grid">
+                <div class="sdg-card">
+                    <div class="sdg-badge sdg-badge-4">ODS 4</div>
+                    <div class="sdg-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="sdg-title">Educación de Calidad</h3>
+                    <p class="sdg-description">Brinda educación artística gratuita, sin barreras económicas ni
+                        geográficas</p>
+                    <div class="sdg-hover-line"></div>
+                </div>
+
+                <div class="sdg-card">
+                    <div class="sdg-badge sdg-badge-5">ODS 5</div>
+                    <div class="sdg-icon">
+                        <i class="fas fa-venus"></i>
+                    </div>
+                    <h3 class="sdg-title">Igualdad de Género</h3>
+                    <p class="sdg-description">Promueve el empoderamiento femenino mediante el arte y el acceso
+                        igualitario</p>
+                    <div class="sdg-hover-line"></div>
+                </div>
+
+                <div class="sdg-card">
+                    <div class="sdg-badge sdg-badge-10">ODS 10</div>
+                    <div class="sdg-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="sdg-title">Reducción de las Desigualdades</h3>
+                    <p class="sdg-description">Lleva el arte a sectores marginados, rurales o sin acceso a educación
+                        cultural</p>
+                    <div class="sdg-hover-line"></div>
+                </div>
+
+                <div class="sdg-card">
+                    <div class="sdg-badge sdg-badge-11">ODS 11</div>
+                    <div class="sdg-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3 class="sdg-title">Ciudades y Comunidades Sostenibles</h3>
+                    <p class="sdg-description">Fortalece la cultura local o personal, así como la identidad comunitaria</p>
+                    <div class="sdg-hover-line"></div>
+                </div>
+
+                <div class="sdg-card">
+                    <div class="sdg-badge sdg-badge-17">ODS 17</div>
+                    <div class="sdg-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="sdg-title">Alianzas para lograr los Objetivos</h3>
+                    <p class="sdg-description">Colabora con organizaciones, artistas y colectivos con fines sociales</p>
+                    <div class="sdg-hover-line"></div>
+                </div>
+            </div>
+
+            <!-- Future Vision -->
+            <div class="future-vision">
+                <div class="future-vision-header">
+                    <div class="future-vision-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="future-vision-title">¿Qué sigue para Kínera?</h3>
+                    <p class="future-vision-subtitle">
+                        Kínera seguirá creciendo como una comunidad creativa libre, solidaria y humana
+                    </p>
+                </div>
+
+                <div class="future-vision-content">
+                    <div class="future-vision-column">
+                        <div class="future-vision-item">
+                            <div class="future-vision-bullet"></div>
+                            <p>Ampliar los talleres virtuales a más países de habla hispana</p>
+                        </div>
+                        <div class="future-vision-item">
+                            <div class="future-vision-bullet"></div>
+                            <p>Crear una red de artistas solidarios que impartan talleres</p>
+                        </div>
+                    </div>
+                    <div class="future-vision-column">
+                        <div class="future-vision-item">
+                            <div class="future-vision-bullet"></div>
+                            <p>Desarrollar materiales gratuitos para aprender arte en casa</p>
+                        </div>
+                        <div class="future-vision-item">
+                            <div class="future-vision-bullet"></div>
+                            <p>Llevar el proyecto a comunidades indígenas o rurales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <h2 class="section-title">¿Quién lidera Kínera?</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="founder-content">
+                <!-- Founder Info -->
+                <div class="founder-info">
+                    <div class="founder-card">
+                        <!-- Decorative elements -->
+                        <div class="founder-decoration founder-decoration-1">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="founder-decoration founder-decoration-2">
+                            <i class="fas fa-diamond"></i>
+                        </div>
+
+                        <div class="founder-card-content">
+                            <h3 class="founder-name">Luisa Yamileth Martínez Leonides</h3>
+
+                            <div class="founder-badges">
+                                <span class="founder-badge founder-badge-primary">Fundadora</span>
+                                <span class="founder-badge founder-badge-accent">Artista Textil</span>
+                                <span class="founder-badge founder-badge-coral">Emprendedora Social</span>
+                            </div>
+
+                            <p class="founder-description">
+                                Joven emprendedora social, artista textil y cofundadora de <strong>EcoMundo</strong> y
+                                <strong>VÍA</strong>.
+                                Luisa ha dedicado su vida a defender el arte como herramienta de transformación y
+                                empoderamiento.
+                            </p>
+
+                            <p class="founder-description">
+                                Inspirada por el compromiso social, creó Kínera como una alternativa real y gratuita
+                                para que niños, jóvenes y adultos puedan aprender, sanar, expresarse y conectar a través
+                                del arte, sin barreras.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote and Origin -->
+                <div class="founder-details">
+                    <!-- Personal Quote -->
+                    <div class="founder-quote">
+                        <div class="founder-quote-decoration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z">
+                                </path>
+                                <path
+                                    d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="founder-quote-content">
+                            <h4 class="founder-quote-title">Su lema personal:</h4>
+                            <blockquote class="founder-quote-text">
+                                "Todos deberíamos tener la oportunidad de crear arte"
+                            </blockquote>
+                        </div>
+                        <div class="founder-quote-line"></div>
+                    </div>
+
+                    <!-- Origin Story -->
+                    <div class="founder-origin">
+                        <div class="founder-origin-decoration">
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <h4 class="founder-origin-title">Origen e inspiración</h4>
+
+                        <p class="founder-origin-text">
+                            El nombre <strong>"Kínera"</strong> fue creado para evocar
+                            <strong> movimiento, comunidad y expresión</strong>. Suena suave, femenino y cultural.
+                        </p>
+
+                        <p class="founder-origin-text">
+                            Kínera representa el fluir creativo que se da cuando alguien decide transformar algo con sus
+                            propias manos,
+                            surgiendo del profundo amor por el arte y por la comunidad.
+                        </p>
+                    </div>
+
+                    <!-- Mission Statement -->
+                    <div class="founder-mission">
+                        <h4 class="founder-mission-title">Visión de impacto</h4>
+                        <p class="founder-mission-text">
+                            "Vio la necesidad de crear un espacio donde el arte no fuera un lujo,
+                            sino una herramienta de inclusión y empoderamiento."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <!-- Decorative elements -->
+        <div class="contact-decoration contact-decoration-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z">
+                </path>
+            </svg>
+        </div>
+        <div class="contact-decoration contact-decoration-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+            </svg>
+        </div>
+        <div class="contact-decoration contact-decoration-3"></div>
+
+        <div class="container">
+            <div class="contact-content">
+                <!-- Header -->
+                <div class="contact-header">
+                    <h2 class="contact-title">Únete a nuestra comunidad</h2>
+                    <div class="contact-divider"></div>
+                    <p class="contact-subtitle">
+                        ¿Listo para conectar con el arte que llevás dentro? Te esperamos en Instagram
+                    </p>
+                </div>
+
+                <!-- Main CTA Card -->
+                <div class="contact-main">
+                    <div class="contact-main-content">
+                        <div class="contact-instagram-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+
+                        <div class="contact-main-text">
+                            <h3 class="contact-main-title">Síguenos en Instagram</h3>
+                            <p class="contact-main-description">
+                                Descubre nuestros talleres, conoce a nuestra comunidad artística y mantente al día
+                                con todas las actividades creativas que tenemos para ti.
+                            </p>
+                        </div>
+
+                        <button class="btn btn-kinera btn-lg contact-main-btn"
+                            onclick="window.open('https://instagram.com/kinera_academy', '_blank')">
+                            <i class="fab fa-instagram"></i>
+                            @kinera_academy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Secondary CTAs -->
+                <div class="contact-secondary">
+                    <div class="contact-secondary-card">
+                        <div class="contact-secondary-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                <line x1="9" y1="9" x2="15" y2="9"></line>
+                                <line x1="9" y1="13" x2="15" y2="13"></line>
+                            </svg>
+                        </div>
+                        <h4 class="contact-secondary-title">Información sobre talleres</h4>
+                        <p class="contact-secondary-description">
+                            Horarios, modalidades y próximas fechas de nuestros talleres gratuitos
+                        </p>
+                    </div>
+
+                    <div class="contact-secondary-card">
+                        <div class="contact-secondary-icon contact-secondary-icon-accent">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="contact-secondary-title">Comunidad creativa</h4>
+                        <p class="contact-secondary-description">
+                            Conectá con otros artistas y compartí tu proceso creativo con nosotros
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Final Message -->
+                <div class="contact-final">
+                    <blockquote class="contact-final-quote">
+                        "El arte que nos conecta…"
+                    </blockquote>
+                    <p class="contact-final-subtitle">
+                        porque crear también es sanar, resistir y vivir.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background pattern -->
+        <div class="contact-pattern">
+            <div class="contact-pattern-circle contact-pattern-circle-1"></div>
+            <div class="contact-pattern-circle contact-pattern-circle-2"></div>
+            <div class="contact-pattern-circle contact-pattern-circle-3"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
