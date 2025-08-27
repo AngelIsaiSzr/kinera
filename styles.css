@@ -1834,8 +1834,12 @@ body {
         margin-top: 5rem;
     }
 
+    .hero-description {
+        margin-top: -0.75rem;
+    }
+
     .hero-buttons {
-        margin-top: -0.5rem;
+        margin-top: -1rem;
         margin-bottom: 2rem;
     }
 
